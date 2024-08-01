@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hassad web app</title>
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="login.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -22,55 +22,43 @@
 </head>
 
 <body>
-  <header>
     <nav class="navbar bg-body-tertiary" id="navbar">
       <div class="container-fluid">
-        <h1 id="header">HASSAD ROASTERY.</h1>
-        <a class="navbar-brand" id="home" href="index.html">HOME</a>
-      </div>
+        <h1 id="header">HASSAD ROASTERY.
+          <img id="logo" class="image" src="/images/logo.webp" alt="logo">
+
+        </h1>
+        <div>
+          <a class="navbar-brand" id="home" href="index.html">HOME</a>
+  
+        </div>
+         <!-- <a><button>--LOGIN</button></a>
+ -->
+        </div>
     </nav>
+    <img id="pic" class="image" src="/images/logo.webp" alt="logo">
+
 
 
     <!-- <hr id="line"> -->
-    <img id="logo" class="image" src="/images/logo.webp" alt="logo">
-
-    <!-- <h1 id="top">WELCOME!!!</h1> -->
-
+     <!-- login form -->
+     <!--LOGIN CONTAINER-->
+     <div class="login-container">
+      <form id="login-form" class="login-form" onsubmit="validateForm(event)">
+        <h2 id="login">Log in</h2>
+        <div class="form-group">
+          <input type="text" id="username" name="username" placeholder="Username" required>
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit">Login</button>
+        <p id="error-message" class="error-message"></p>
+      </form>
+    </div>
     <hr id="line">
 
-    <div class="box">
-      <i class="fa-solid fa-mug-saucer"></i>
-      <!-- <p>This is a box!</p> -->
-    </div>
-    <div data-testid="main-fill" class="Pillstyle__StyledFilledPill-sc-1cbb7t-8 haATH"></div>
-    <!-- table -->
-    <table class="styled-table">
-      <tr>
-          <th>coffee</th>
-          <th>date</th>
-          <th>time</th>
-      </tr>
-      <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          
-      </tr>
-      <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-      </tr>
-      <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          
-      </tr>
-  </table>
-  
-    <hr class="line2" id="line">
-    <!-- footer -->
+    <!-- FOOTER -->
     <footer>
       <div class="row">
         <div class="col" id="far">
@@ -80,20 +68,20 @@
               Othman Ibn Affan Street, Ar Rayyan,Dammam 32256
             </i>
           </p>
-
-
+  
+  
           <p>
             <i class="fa-solid fa-location-dot">
               8323 King Khalid Rd, Al Khobar Al Shamalia,Al Khobar 34425>
             </i>
           </p>
-
-
+  
+  
           <p>
             <i class="fa-solid fa-phone">0546127709</i>
           </p>
           <div class="col9">
-
+  
             <ul class="social-icons">
               <h3>Follow us</h3>
               <li><a
@@ -102,13 +90,20 @@
               <li><a href=https://hasadcoffee.com><i class="fa-solid fa-envelope"></i></a></li>
             </ul>
           </div>
-
+  
         </div>
         <hr>
-
+  
         <p id="copyright">© 2024 Hassad Roastery. All rights reserved.</p>
     </footer>
-
+  
 </body>
 
+    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </html>
+    
+   
